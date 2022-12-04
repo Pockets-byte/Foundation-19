@@ -1,6 +1,6 @@
 /datum/species/fcb
 	name = SPECIES_FCB
-	name_plural = "Humans
+	name_plural = "Humans"
 	primitive_form = "Monkey"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	description = "Humanity originated in the Sol system, and over the last five centuries has spread \
