@@ -187,8 +187,10 @@
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_IS_WHITELISTED
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 	oxy_mod = 2
-	metabolism_mod = .9
+	metabolism_mod = 0.9
+	siemens_coefficient = 3 
 	blood_volume =  SPECIES_BLOOD_DEFAULT * 0.25
+	strength = STR_HIGH
 
 	cold_level_1 = SYNTH_COLD_LEVEL_1
 	cold_level_2 = SYNTH_COLD_LEVEL_2
@@ -200,7 +202,7 @@
 
 	has_limbs = list(
 		BP_CHEST =  list("path" = /obj/item/organ/external/chest),
-		BP_ALL_LIMBS =  list("path" = /obj/item/organ/external/robot)
+		BP_ALL_LIMBS =  list("path" = /obj/item/organ/external/)
 	)
 
 	has_organ = list(
@@ -209,7 +211,7 @@
 		BP_LUNGS =    /obj/item/organ/internal/lungs,
 		BP_LIVER =    /obj/item/organ/internal/liver,
 		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
-		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_BRAIN =    /obj/item/organ/internal/mmi_holder,
 		BP_EYES =     /obj/item/organ/internal/eyes/robot
 		)
 
