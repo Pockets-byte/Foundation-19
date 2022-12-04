@@ -179,3 +179,37 @@
 		E.limb_flags |= ORGAN_FLAG_DEFORMED
 		E.status |= ORGAN_DISFIGURED
 		E.status |= ORGAN_MUTATED
+
+
+/datum/species/human/cyborg
+	description = "____"
+
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_IS_WHITELISTED
+	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
+	oxy_mod = 2
+	metabolism_mod = .9
+	blood_volume =  SPECIES_BLOOD_DEFAULT * 0.25
+
+	cold_level_1 = SYNTH_COLD_LEVEL_1
+	cold_level_2 = SYNTH_COLD_LEVEL_2
+	cold_level_3 = SYNTH_COLD_LEVEL_3
+
+	heat_level_1 = SYNTH_HEAT_LEVEL_1		// Gives them about 25 seconds in space before taking damage
+	heat_level_2 = SYNTH_HEAT_LEVEL_2
+	heat_level_3 = SYNTH_HEAT_LEVEL_3
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest),
+		BP_ALL_LIMBS =  list("path" = /obj/item/organ/external/robot)
+	)
+
+	has_organ = list(
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_STOMACH =  /obj/item/organ/internal/stomach,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_EYES =     /obj/item/organ/internal/eyes/robot
+		)
+
