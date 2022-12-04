@@ -182,6 +182,7 @@
 
 
 /datum/species/human/cyborg
+	name = SPECIES_FCB
 	description = "____"
 
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_IS_WHITELISTED
