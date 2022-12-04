@@ -72,7 +72,7 @@
 			return FALSE
 
 		if(client.prefs.organ_data[BP_CHEST] == "cyborg")
-			if(!whitelist_lookup(SPECIES_FBP, client.ckey) && client.prefs.species != SPECIES_IPC)
+			if(!whitelist_lookup(SPECIES_FBP, client.ckey) && client.prefs.species != SPECIES_IPC, SPECIES_FCB)
 				tgui_alert(client, "You are currently not whitelisted to play as FBP.", null, list("Ok"))
 				return FALSE
 
